@@ -1,0 +1,6 @@
+# Not part of the site: the checkout itself and the deploy config.
+.git
+.wrangler
+node_modules
+wrangler.jsonc
+.assetsignore

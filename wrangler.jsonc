@@ -1,0 +1,13 @@
+// Cloudflare Workers Builds deploys this repo to share.aloqaili.xyz, the backup of GitHub Pages:
+// the whole repo as static files, as GitHub Pages serves it. Without this file wrangler guesses
+// w/ as the site (the only index.html), which leaves /w/ and /.well-known/ out.
+{
+  // Workers Builds deploys under the connected Worker's own name whatever this says.
+  "name": "t1nk333r-github-io",
+  "compatibility_date": "2026-09-01",
+  "assets": {
+    "directory": ".",
+    // /w redirects to /w/, as on GitHub Pages; a browser keeps the #fragment through it.
+    "html_handling": "auto-trailing-slash"
+  }
+}

@@ -9,7 +9,9 @@ Where widget links from my Omalauncher build land:
 - `.well-known/assetlinks.json` — lets Android open these links straight in the launcher
   (`dev.omalauncher`, signed with my key) without going through the browser.
 
-The same page is served from `https://feather.aloqaili.xyz/w` as a backup.
+The same repo deploys to Cloudflare Pages as `https://share.aloqaili.xyz/w`, the backup: a push
+updates both. (A copy on my Feather server, which only answers at home and on Tailscale, has to be
+copied there by hand.)
 
 `w/index.html` is adapted from Simon Schubert's share page in
 [omarchy-widgets](https://github.com/SimonSchubert/omarchy-widgets) under the MIT license (see

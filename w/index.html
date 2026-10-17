@@ -114,8 +114,9 @@
     document.getElementById("widget").classList.remove("hidden");
   }
 
-  // This copy's own address, without the slash a server may add: the launcher takes links to either host.
-  const page = location.host + location.pathname.replace(/\/$/, "");
+  // This copy's own address, without the slash a server may add or an index.html typed out: the launcher
+  // takes links to either host's /w.
+  const page = location.host + location.pathname.replace(/\/(index\.html)?$/, "");
 
   // The launcher catches this link itself once Android trusts it for the domain; until then, and from
   // any browser, an intent: link opens it, passing the data as an extra since it can't keep the fragment.

@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "dev.omalauncher",
+      "sha256_cert_fingerprints": [
+        "65:36:71:3E:F1:A7:44:26:62:AC:CC:28:30:91:C3:86:E6:26:3F:F7:D4:3E:E3:AA:5C:F2:0F:0A:92:E5:AD:C9"
+      ]
+    }
+  }
+]
